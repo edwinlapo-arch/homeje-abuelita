@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Homenaje en Memoria</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Georgia', serif;
+        background: linear-gradient(180deg, #111, #2c2c2c);
+        color: #f5f5f5;
+        overflow-x: hidden;
+    }
+
+    .contenedor {
+        max-width: 900px;
+        margin: 60px auto;
+        background: rgba(255,255,255,0.08);
+        padding: 50px;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        text-align: center;
+        animation: aparecer 2s ease;
+    }
+
+    @keyframes aparecer {
+        from { opacity: 0; transform: translateY(40px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+        font-size: 38px;
+        margin-bottom: 10px;
+        color: #e1bee7;
+    }
+
+    h2 {
+        font-size: 26px;
+        margin-bottom: 20px;
+        color: #ffffff;
+    }
+
+    .fechas {
+        font-style: italic;
+        color: #ccc;
+        margin-bottom: 30px;
+    }
+
+    video {
+        width: 100%;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+        margin-bottom: 30px;
+        animation: zoom 3s ease;
+    }
+
+    @keyframes zoom {
+        from { transform: scale(0.95); opacity: 0; }
+        to { transform: scale(1); opacity: 1; }
+    }
+
+    p {
+        font-size: 19px;
+        line-height: 1.8;
+        margin: 20px 0;
+        opacity: 0;
+        animation: texto 2s forwards;
+    }
+
+    p:nth-child(6) { animation-delay: 1s; }
+    p:nth-child(7) { animation-delay: 2s; }
+
+    @keyframes texto {
+        to { opacity: 1; }
+    }
+
+    .corazon {
+        font-size: 32px;
+        margin-top: 30px;
+        animation: latido 1.5s infinite;
+        color: #ef5350;
+    }
+
+    @keyframes latido {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.2); }
+        100% { transform: scale(1); }
+    }
+
+    footer {
+        margin-top: 40px;
+        font-size: 15px;
+        color: #bbb;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="contenedor">
+
+    <h1>En amorosa memoria de</h1>
+    <h2>🌹 Abuelita Lola🌹</h2>
+
+    <div class="fechas">
+        (1929– 2025)
+    </div>
+
+    <!-- VIDEO -->
+    <video controls autoplay muted loop>
+        <source src="C:\Users\USUARIO2024\Desktop\ABU\WhatsApp Video 2026-02-10 at 19.41.56.mp4" type="video/mp4">
+    </video>
+
+    <p>
+        Abuelita querida, tu vida fue una bendición y tu recuerdo un tesoro
+        que guardaremos por siempre en nuestros corazones.
+    </p>
+
+    <p>
+        Gracias por tu amor infinito, tus enseñanzas y cada abrazo
+        que hoy vive en nuestra memoria.
+    </p>
+
+    <div class="corazon">❤️</div>
+
+    <footer>
+        Con amor eterno,<br>
+        Tu familia
+    </footer>
+
+</div>
+
+</body>
+</html>
